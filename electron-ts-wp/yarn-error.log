@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/pavel/.nvm/versions/node/v14.0.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add --dev electron webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/reset-typescript
+
+PATH: 
+  /Users/pavel/.nvm/versions/node/v14.0.0/bin:/Users/pavel/Development/flutter/bin:/Users/pavel/.intellij:/Users/pavel/.cargo/bin:/usr/local/bin:/usr/bin/git:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Applications/Araxis Merge.app/Contents/Utilities:/Users/pavel/Library/Android/sdk/tools:/Users/pavel/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2freset-typescript: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1218:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "003",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

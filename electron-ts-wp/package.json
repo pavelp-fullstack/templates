@@ -1,0 +1,42 @@
+{
+  "name": "003",
+  "version": "1.0.0",
+  "main": "./dist/platform/main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/node": "^13.13.5",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.5.3",
+    "electron": "^8.2.5",
+    "electron-devtools-installer": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "dev:p": "NODE_ENV=development webpack --config webpack.platform.config.js --mode development && HMR_DEBUG=1 electron --remote-debugging-port=9223 .",
+    "dev:a": "NODE_ENV=development webpack-dev-server --config webpack.app.config.js --mode development",
+    "build:p": "HMR_DEBUG=1 webpack --config webpack.platform.config.js --mode development",
+    "build:a": "webpack --config webpack.app.config.js --mode development",
+    "dev": "run-p dev:p dev:a",
+    "build": "run-p build:p build:a"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
